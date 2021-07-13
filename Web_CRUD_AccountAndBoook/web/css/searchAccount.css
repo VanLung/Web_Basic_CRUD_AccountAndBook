@@ -1,0 +1,252 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 9, 2021, 2:44:53 AM
+    Author     : NGUYEN VAN LUNG SE140193
+*/
+
+*
+{
+    outline: none;
+}
+
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+body
+{
+    line-height: auto;
+
+    text-align: center; 
+    margin: 0;
+    background-color: #C6E2FF;
+}
+
+.tb
+{
+    
+    display: table;
+    width: 100%;
+}
+
+div .td
+{
+    align-content: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+input, button
+{
+    color: #fff;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+#cover
+{
+    position: absolute;
+    top: 23%;
+    width: 100%;
+    padding: 35px;
+    margin: -83px auto 0 auto;
+    background-color: #ff7575;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px #ff7c7c, 0 0 0 10px #ffffffeb;
+    transform: scale(0.3);
+    font-size: 60px;
+    
+}
+#cover .div .a{
+    font-size: 30px;
+}
+
+#tableAccount {
+    text-align:center;
+}
+
+form
+{
+    height: 96px;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 10;
+   color: black;
+}
+input[type="number"]
+{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 10;
+   color: black;
+}
+input[type="email"]
+{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 10;
+   color: black;
+}
+input[type="url"]
+{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 10;
+   color: black;
+}
+#searchplaceholder{
+    font-size: 70px;
+    color: #ffff;
+}
+
+input[type="text"]::placeholder
+{
+    color: ffff;
+}
+
+#tableAccount input[type="submit"]
+{
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+    line-height: 1;
+   color: black;
+}
+
+
+input[type="submit"]::placeholder
+{
+    color: ffff;
+}
+
+#s-cover
+{
+    width: 1px;
+    padding-left: 35px;
+    font-size: 30px;
+}
+
+button
+{
+    position: relative;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+}
+
+#s-circle
+{
+    position: relative;
+    top: -8px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    border-width: 15px;
+    border: 15px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}
+
+button span
+{
+    position: absolute;
+    top: 68px;
+    left: 43px;
+    display: block;
+    width: 45px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: rotateZ(52deg);
+    transition: 0.5s ease all;
+}
+
+button span:before, button span:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: rotateZ(0);
+    transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle
+{
+    top: -1px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#s-cover:hover span
+{
+    top: 50%;
+    left: 56px;
+    width: 25px;
+    margin-top: -9px;
+    transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before
+{
+    bottom: 11px;
+    transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after
+{
+    bottom: -11px;
+    transform: rotateZ(-52deg);
+}
+#s-cover:hover button span:before, #s-cover:hover button span:after
+{
+    right: -6px;
+    width: 40px;
+    background-color: #fff;
+}
+
+#ytd-url {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 10px 14px;
+  margin: 20px;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #ff7575;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px -5px rgba(255, 117, 117, 0.86);
+  z-index: 125;
+}
